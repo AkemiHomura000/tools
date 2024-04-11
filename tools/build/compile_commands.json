@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lp1/qt_test/tools/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/json2yaml.dir/main.cpp.o -c /home/lp1/qt_test/tools/main.cpp",
+  "file": "/home/lp1/qt_test/tools/main.cpp"
+}
+]

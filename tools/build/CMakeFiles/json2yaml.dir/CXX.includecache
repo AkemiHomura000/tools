@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lp1/qt_test/tools/main.cpp
+iostream
+-
+fstream
+-
+rapidjson/document.h
+-
+rapidjson/filereadstream.h
+-
+rapidjson/istreamwrapper.h
+-
+vector
+-
+yaml-cpp/yaml.h
+/home/lp1/qt_test/tools/yaml-cpp/yaml.h
+

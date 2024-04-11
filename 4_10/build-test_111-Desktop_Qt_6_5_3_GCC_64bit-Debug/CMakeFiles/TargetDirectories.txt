@@ -1,0 +1,5 @@
+/home/lp1/qt_test/4_10/build-test_111-Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/NodeSim.dir
+/home/lp1/qt_test/4_10/build-test_111-Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/lp1/qt_test/4_10/build-test_111-Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/lp1/qt_test/4_10/build-test_111-Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/NodeSim_autogen_timestamp_deps.dir
+/home/lp1/qt_test/4_10/build-test_111-Desktop_Qt_6_5_3_GCC_64bit-Debug/CMakeFiles/NodeSim_autogen.dir
