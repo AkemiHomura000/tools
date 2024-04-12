@@ -55,27 +55,40 @@ int main()
         int endId = edges[i]["end"].GetInt() - 300000;
         if (startId % 3 == 0)
         {
-            tree_nodes[startId / 3-1].left_id = (endId) / 3 + 1;
-            std::cout << "tree_node" << startId / 3 << "\tleft_id=" << tree_nodes[startId / 3].left_id << std::endl;
+            int i = 0;
+            for (i; i < tree_nodes.size(); i++)
+            {
+                if (tree_nodes[i].id == startId / 3)
+                    break;
+            }
+            tree_nodes[i].left_id = endId / 3 + 1;
+            std::cout << "tree_node" << tree_nodes[i].id << "\tleft_id=" << tree_nodes[i].left_id << std::endl;
         }
+
         if (startId % 3 == 2)
         {
-            tree_nodes[(startId + 1) / 3-1].right_id = (endId) / 3 + 1;
-            std::cout << "tree_node" << (startId + 1) / 3 << "\tright_id=" << tree_nodes[(startId + 1) / 3].right_id << std::endl;
+            int i = 0;
+            for (i; i < tree_nodes.size(); i++)
+            {
+                if (tree_nodes[i].id == (startId + 1) / 3)
+                    break;
+            }
+            tree_nodes[i].right_id = endId / 3 + 1;
+            std::cout << "tree_node" << tree_nodes[i].id << "\tright_id=" << tree_nodes[i].right_id << std::endl;
         }
     }
     //--------------------------------------------------------------------------------------------------------------------------------------------------
     YAML::Node decision_tree;
     for (int i = 0; i < tree_nodes.size(); i++)
     {
-            }
+    }
     std::vector<YAML::Node> yaml_nodes;
     for (int i = 0; i < tree_nodes.size(); i++)
     {
-        std::cout << "Node " << tree_nodes[i].id << ", left_id: " << tree_nodes[i].left_id << ", right_id: " << tree_nodes[i].right_id<< std::endl;
+        std::cout << "Node " << tree_nodes[i].id << ", left_id: " << tree_nodes[i].left_id << ", right_id: " << tree_nodes[i].right_id << std::endl;
 
         YAML::Node node;
-        node["id"] = tree_nodes[i].id ;
+        node["id"] = tree_nodes[i].id;
         node["variable"] = tree_nodes[i].variable;
         node["condition"] = tree_nodes[i].condition;
         node["left_id"] = tree_nodes[i].left_id;
