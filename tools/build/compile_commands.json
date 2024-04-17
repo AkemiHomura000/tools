@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/lp1/qt_test/tools/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/json2yaml.dir/main.cpp.o -c /home/lp1/qt_test/tools/main.cpp",
+  "command": "/usr/bin/g++   -isystem /usr/include/opencv4  -g   -o CMakeFiles/pgm2jpg.dir/pgm2jpg.cpp.o -c /home/lp1/qt_test/tools/pgm2jpg.cpp",
+  "file": "/home/lp1/qt_test/tools/pgm2jpg.cpp"
+},
+{
+  "directory": "/home/lp1/qt_test/tools/build",
+  "command": "/usr/bin/g++   -I/usr/include/opencv4  -g   -o CMakeFiles/json2yaml.dir/main.cpp.o -c /home/lp1/qt_test/tools/main.cpp",
   "file": "/home/lp1/qt_test/tools/main.cpp"
 }
 ]

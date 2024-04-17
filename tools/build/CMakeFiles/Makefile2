@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/lp1/qt_test/tools/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/pgm2jpg.dir/all
 all: CMakeFiles/json2yaml.dir/all
 
 .PHONY : all
@@ -63,6 +64,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/pgm2jpg.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
 clean: CMakeFiles/ContinuousConfigure.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
@@ -94,6 +96,33 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pgm2jpg.dir
+
+# All Build rule for target.
+CMakeFiles/pgm2jpg.dir/all:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/depend
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lp1/qt_test/tools/build/CMakeFiles --progress-num=3,4 "Built target pgm2jpg"
+.PHONY : CMakeFiles/pgm2jpg.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pgm2jpg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lp1/qt_test/tools/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pgm2jpg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lp1/qt_test/tools/build/CMakeFiles 0
+.PHONY : CMakeFiles/pgm2jpg.dir/rule
+
+# Convenience name for target.
+pgm2jpg: CMakeFiles/pgm2jpg.dir/rule
+
+.PHONY : pgm2jpg
+
+# clean rule for target.
+CMakeFiles/pgm2jpg.dir/clean:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/clean
+.PHONY : CMakeFiles/pgm2jpg.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyTest.dir

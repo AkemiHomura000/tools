@@ -1,6 +1,7 @@
 /home/lp1/qt_test/tools/build/CMakeFiles/rebuild_cache.dir
 /home/lp1/qt_test/tools/build/CMakeFiles/test.dir
 /home/lp1/qt_test/tools/build/CMakeFiles/package_source.dir
+/home/lp1/qt_test/tools/build/CMakeFiles/pgm2jpg.dir
 /home/lp1/qt_test/tools/build/CMakeFiles/NightlyTest.dir
 /home/lp1/qt_test/tools/build/CMakeFiles/ContinuousConfigure.dir
 /home/lp1/qt_test/tools/build/CMakeFiles/ContinuousBuild.dir

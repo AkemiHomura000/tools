@@ -144,6 +144,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pgm2jpg
+
+# Build rule for target.
+pgm2jpg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pgm2jpg
+.PHONY : pgm2jpg
+
+# fast build rule for target.
+pgm2jpg/fast:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/build
+.PHONY : pgm2jpg/fast
+
+#=============================================================================
 # Target rules for targets named NightlyTest
 
 # Build rule for target.
@@ -547,6 +560,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/json2yaml.dir/build.make CMakeFiles/json2yaml.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pgm2jpg.o: pgm2jpg.cpp.o
+
+.PHONY : pgm2jpg.o
+
+# target to build an object file
+pgm2jpg.cpp.o:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/pgm2jpg.cpp.o
+.PHONY : pgm2jpg.cpp.o
+
+pgm2jpg.i: pgm2jpg.cpp.i
+
+.PHONY : pgm2jpg.i
+
+# target to preprocess a source file
+pgm2jpg.cpp.i:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/pgm2jpg.cpp.i
+.PHONY : pgm2jpg.cpp.i
+
+pgm2jpg.s: pgm2jpg.cpp.s
+
+.PHONY : pgm2jpg.s
+
+# target to generate assembly for a file
+pgm2jpg.cpp.s:
+	$(MAKE) -f CMakeFiles/pgm2jpg.dir/build.make CMakeFiles/pgm2jpg.dir/pgm2jpg.cpp.s
+.PHONY : pgm2jpg.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -556,6 +596,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... package_source"
+	@echo "... pgm2jpg"
 	@echo "... NightlyTest"
 	@echo "... ContinuousConfigure"
 	@echo "... ContinuousBuild"
@@ -590,6 +631,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pgm2jpg.o"
+	@echo "... pgm2jpg.i"
+	@echo "... pgm2jpg.s"
 .PHONY : help
 
 
